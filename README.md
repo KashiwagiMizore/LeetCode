@@ -1,3 +1,2 @@
 # LeetCode
-LeetCode题目解法记录
 记录遇到题目的解法 两个branch分别记录java和python的code
