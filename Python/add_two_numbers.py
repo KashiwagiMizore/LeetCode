@@ -29,7 +29,7 @@ class Solution(object):
             if l2:
                 l2 = l2.next
             curr = curr.next
-        # 如果有进位则传入
+        # 所有计算完成后传入最后一个数的进位（0或1）
         if remainder:
             curr.next = ListNode(remainder)
         return result.next
