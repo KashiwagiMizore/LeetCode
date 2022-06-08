@@ -30,6 +30,7 @@
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int index1 = m - 1, index2 = n - 1;
+        //逆序遍历
         for (int i = m + n - 1; i >= 0; i--) {
             //nums1的数据已经取完时
             if (index1 < 0) {
@@ -39,6 +40,7 @@ class Solution {
             else if (index2 < 0) {
                 nums1[i] = nums1[index1--];
             } else {
+                //把更大的放到最后
                 if (nums1[index1] >= nums2[index2]) {
                     nums1[i] = nums1[index1--];
                 } else {
